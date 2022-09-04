@@ -1,0 +1,143 @@
+@import url("./main.css");
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+/* navbar */
+
+.navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5rem;
+    padding:0.5rem;
+    background-color:var(--brand-color);
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-item{
+    margin-left: 1rem;
+    padding:.5rem;
+}
+
+/* navbar end */
+
+
+/* left icon social */
+.home-social a{
+    color: rgba(0,0,0,0.5);
+
+}
+
+.home-social{
+    position:fixed;
+    width: 3rem;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+}
+
+.home-social-parent{
+    list-style:none;
+    margin-bottom:50px;
+}
+
+.home-social-child
+{
+    padding:0.5rem;
+    font-size:2.5rem;
+    margin-top: 1rem;
+}
+
+.home-social-child{
+    position: relative;
+}
+
+.home-social-icon i:hover{
+    transition: color var(--animation-speed);
+    color: var(--brand-color);
+    font-size: 2.8rem;
+
+}
+
+/* left icon social */
+
+
+/* body header main start */
+.header{
+    width: calc(100vw - 8rem);
+    height: calc(100vh - 8rem);
+    margin:2rem 4rem;
+}
+
+img{
+    width: 450px;
+    border-radius: 50px 500px 10px 50px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.header-right-body{
+    font-size: 5rem;
+}
+
+.middle-text{
+    text-decoration:underline ;
+    color: var(--secondary);
+}
+
+.header-right{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hire_me{
+    margin-top: 3rem;
+    width: 150px;
+    height: 50px;
+    font-size: 2rem;
+    border:none;
+    border-radius: 10px;
+    border: 1px solid rgba(19, 99, 223,0.5);
+    background-color: white;
+}
+.hire_me:hover{
+    background-color: var(--secondary);
+    color: white;
+    transition: all var(--animation-speed);
+    cursor:pointer;
+}
+
+.developer{
+    text-decoration: underline;
+    color: var(--secondary);
+}
+/* body header main start */
+
+

@@ -1,0 +1,11 @@
+:root{
+    --brand-color:#293462;
+    --secondary:#1363DF;
+    --animation-speed:0.8s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
