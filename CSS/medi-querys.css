@@ -5,14 +5,19 @@
         .header-right-body{
             font-size: 3.1rem ;
         }
-    }
+}
     
-    @media (max-width:751px){
+@media (max-width:751px){
         .header-right-body{
             font-size: 2.5rem ;
         }
         .header{
             margin-top:15%;
-        flex-direction: column;
-    }
+            flex-direction: column;
+        }
+        
+}
+/* navbar hidden burger menu */
+@media (max-width:652px){
+
 }
