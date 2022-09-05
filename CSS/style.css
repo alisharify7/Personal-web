@@ -95,7 +95,7 @@ a{
 .header{
     width: calc(100vw - 8rem);
     height: calc(100vh - 8rem);
-    margin:2rem 4rem;
+    margin:4rem 4rem;
 }
 
 img{
@@ -154,7 +154,6 @@ header{
 .dropdown-menu-hover{
     position: relative;
 }
-
 .dropdown-menu-body{
     width:100%;
     list-style: none;
@@ -174,7 +173,7 @@ header{
     border-bottom: 1px solid #fff;
     border-radius:5px;
 }
-.dropdown-menu-hover:hover > ul{
+.navbar-item:hover > ul{
     margin-top:.1rem;
     display: block;
     transition: 1s;
@@ -182,6 +181,10 @@ header{
 
 .dropdown-menu-item:hover{
     background-color:var(--brand-color-hover)
+}
+
+.dropdown-menu-item {
+    font-size: 1rem;
 }
 
 /* drop down menu end */
