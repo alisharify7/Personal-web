@@ -29,16 +29,17 @@ a{
 .navbar-menu{
     list-style: none;
     display: flex;
+    flex-direction: row;
 }
 .navbar-item{
     margin-left: 1rem;
     padding:.5rem;
+    border-radius: 10px;
+    transition: var(--animation-speed) ease;
+    cursor:pointer;
 }
 .navbar-item:hover{
-    cursor:pointer;
-    border-radius: 10px;
     background-color:var(--brand-color-hover);
-    transition: background var(--animation-speed);
 
 }
 
@@ -70,12 +71,6 @@ a{
     margin-bottom:50px;
 }
 
-.home-social-child
-{
-    padding:0.5rem;
-    font-size:2.5rem;
-    margin-top: 1rem;
-}
 
 .home-social-child{
     position: relative;
@@ -85,10 +80,38 @@ a{
     color: var(--brand-color);
     font-size: 2.8rem;
     transition: color var(--animation-speed);
+}
+
+.home-social-child
+{
+    padding:0.5rem;
+    font-size:2.5rem;
+    margin-top: 1rem;
+}
+
+/* burger menu */
+.burger-menu
+{
+    padding:0.5rem;
+    display:none;
+    cursor:pointer;
+}
+
+
+.bar{
+    display:block;
+    width:30px;
+    height:3px;
+    margin-top:6px;
+    background-color: red;
+    margin-left: auto;
+    transition: all .5s ease;
 
 }
 
 /* left icon social */
+
+
 
 
 /* body header main start */
@@ -133,7 +156,7 @@ header{
     border: 1px solid rgba(19, 99, 223,0.5);
     background-color: var(--secondary);
     color: white;
-    transition: background-color var(--animation-speed);
+    transition:  var(--animation-speed) ease;
 }
 .hire_me:hover{
     background-color: white;
@@ -148,6 +171,8 @@ header{
 
 }
 /* body header main start */
+
+
 
 
 /* drop down menu */

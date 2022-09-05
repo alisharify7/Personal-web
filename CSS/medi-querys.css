@@ -19,5 +19,17 @@
 }
 /* navbar hidden burger menu */
 @media (max-width:652px){
+    .navbar-menu{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+        transition: all .5s ease-out;
 
+    }
+    .burger-menu.active .bar:nth-child(1)
+    {
+        background-color:red;
+        display: none;
+    }
 }
