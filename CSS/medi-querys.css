@@ -5,18 +5,39 @@
         .header-right-body{
             font-size: 3.1rem ;
         }
+        .info-container{
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+        }
+        .info-img{
+            width:100%;
+        }
+
 }
     
+
+@media (max-width:899px){
+        .header-right-body{
+            font-size:2.5rem;
+        }
+}
 @media (max-width:751px){
         .header-right-body{
             font-size: 2.5rem ;
         }
         .header{
-            margin-top:15%;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10rem 8rem;
+        }
+        .hire_me{
+            margin: 1rem auto;
         }
         
 }
+
 /* navbar hidden burger menu */
 @media (max-width:652px){
     .navbar-menu{
@@ -27,9 +48,62 @@
         transition: all .5s ease-out;
 
     }
-    .burger-menu.active .bar:nth-child(1)
-    {
-        background-color:red;
-        display: none;
+    .header-index{
+        border-radius: 20px;
+    }
+    .hire_me{
+        font-size: 1.5rem;
+        width: 100px;
+        height: 40px;    
+    }
+    .header-right-body{
+        font-size: 2rem;
+    }
+    .info-self{
+        margin: 2rem 2rem;
+    }
+
+
+}
+
+@media (max-width:560px){
+    .header-index{
+        width: 300px;
+    }
+    .header-right-body{
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width:424px){
+
+    .header-index{
+        width: 290px;
+    }
+    .header-right-body{
+        font-size: 2rem;
+    }
+    .home-social-child{
+        font-size: 1.5rem;
+        padding:0.5rem auto;
+    }
+}
+
+
+@media (max-width:361px){
+    .header{
+        margin-top: 6rem;
+        transition: all .5s ;
+    }
+    .info-self{
+        margin: 1rem 1rem;
+    }
+
+}
+
+@media (max-width:280px){
+    .header{
+        margin-top: 10rem;
+        transition: all .5s ;
     }
 }

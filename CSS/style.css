@@ -1,7 +1,9 @@
 @import url("./main.css");
 
 
-body{
+body
+{
+    scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -35,7 +37,6 @@ a{
     margin-left: 1rem;
     padding:.5rem;
     border-radius: 10px;
-    transition: var(--animation-speed) ease;
     cursor:pointer;
 }
 .navbar-item:hover{
@@ -58,6 +59,8 @@ a{
 
 .home-social{
     position:fixed;
+    top: 0;
+    left: 0;
     width: 3rem;
     height:100%;
     display:flex;
@@ -103,7 +106,7 @@ a{
     width:30px;
     height:3px;
     margin-top:6px;
-    background-color: red;
+    background-color: white;
     margin-left: auto;
     transition: all .5s ease;
 
@@ -115,13 +118,19 @@ a{
 
 
 /* body header main start */
-.header{
-    width: calc(100vw - 8rem);
-    height: calc(100vh - 12rem);
-    margin:4rem 4rem;
+header{
+    width:100%;
+    height:100%;
 }
 
-img{
+.header{
+    text-align: center;
+    margin:8rem 8rem;
+    width: calc(100vw - 16rem);
+    height: calc(100vh - 16rem);
+}
+
+.header-index{
     width: 450px;
     border-radius: 50px 500px 10px 50px;
 }
@@ -136,7 +145,7 @@ header{
 
 .header-right-body{
     text-align:center;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .header-right{
@@ -156,19 +165,49 @@ header{
     border: 1px solid rgba(19, 99, 223,0.5);
     background-color: var(--secondary);
     color: white;
-    transition:  var(--animation-speed) ease;
+    transition: all var(--animation-speed) ease;
 }
 .hire_me:hover{
+    cursor:pointer;
     background-color: white;
     color: black;
-    /* transition: all var(--animation-speed); */
-    cursor:pointer;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
 }
 
 .developer{
     text-decoration: underline;
     color: var(--secondary);
+}
 
+.alisharify{
+    position: relative;
+}
+.alisharify::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:0%;
+    background-color:var(--secondary);
+    animation:swip-in 1s ;
+}
+
+@keyframes swip-in{
+    0%{
+        width: 0;
+    }
+
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        width: 0;
+        left:100%;
+
+    }
 }
 /* body header main start */
 
@@ -213,3 +252,36 @@ header{
 }
 
 /* drop down menu end */
+
+.about-me{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.info-self{
+    padding:1rem;
+    height:calc(100vh - 8rem);
+    margin: 4rem 4rem;
+    text-align: justify;
+}
+.info-container{
+    display:flex;
+}
+.info-img{
+    width: 640px;
+    border-radius: 10px 10px;
+}
+.info-left , .info-right{
+    padding:1.2rem;
+}
+
+.hr-info{
+    width:100%;
+    height:3px;
+    margin: 1rem 0;
+    background-color: var(--brand-color);
+}
+
+.info-left-title{
+    padding: .5rem 0;
+    text-decoration: underline;
+}
